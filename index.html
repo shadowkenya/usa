@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Avon Fashion</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Optional: Add a style for the loading state */
+        .btn-loading {
+            pointer-events: none; /* Disable button during loading */
+            opacity: 0.7;
+        }
+        .spinner-border-sm {
+            width: 1rem;
+            height: 1rem;
+            border-width: .15em;
+        }
+    </style>
+</head>
+
+<body>
+ 
+     <div class="col-lg-6 text-center text-lg-right">
+    <div class="d-inline-flex align-items-center">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=100088387850218" target="_blank" 
+           style="color: #1877F2; margin: 0 10px; font-size: 24px;">
+            <i class="fab fa-facebook"></i>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/254790248509" target="_blank" 
+           style="color: #25D366; margin: 0 10px; font-size: 24px;">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- TikTok -->
+      <a href="https://www.tiktok.com/@shadowtechpro" target="_blank" 
+               style="margin: 0 10px; display: flex; align-items: center;">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" 
+                     alt="TikTok" style="width: 36px; height: 34px;">
+            </a>
+    </div>
+</div>
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+
+                <a href="" class="text-decoration-none">
+                    <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">AVON</span>Fashions</h1>
+                </a>
+            </div>
+            <div class="container-fluid mb-5">
+                <div class="row border-top px-xl-5">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                            <h6 class="m-0">Categories</h6>
+                            <i class="fa fa-angle-down text-dark"></i>
+                        </a>
+                        <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                            <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                                <div class="nav-item dropdown">
+                                    <a href="#products" class="nav-link" data-toggle="dropdown">Dresses <i class="fa fa-angle-down float-right mt-1"></i></a>
+                                    <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                        <a href="#product-categories" class="dropdown-item">Sheath Dress</a>
+                                        <a href="#product-categories" class="dropdown-item"> A-Line Dress</a>
+                                        <a href="#product-categories" class="dropdown-item">Maxi Dress</a>
+                                    </div>
+                                </div>
+                                <a href="#product-categories" class="nav-item nav-link">Attires</a>
+                                <a href="#product-categories" class="nav-item nav-link">Shoes</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-lg-9">
+                        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                            <a href="" class="text-decoration-none d-block d-lg-none">
+                                <h2 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">AVON</span>FASHIONS</h2>
+                            </a>
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                <div class="navbar-nav mr-auto py-0">
+                                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                                   
+                                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                </div>
+                                <div class="navbar-nav ml-auto py-0">
+<!-- Keep your navbar as-is -->
+<div class="navbar-nav ml-auto py-0">
+  <a href="#" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4 rounded-3 shadow">
+      <h5 class="text-center text-success fw-bold mb-3">Avon User Login</h5>
+      <form id="loginForm">
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" id="loginEmail" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" id="loginPassword" class="form-control" required>
+        </div>
+        <div class="text-end">
+          <a href="#" id="forgotLink" class="text-success text-decoration-none small">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-success w-100 mt-3">Login</button>
+      </form>
+      <div class="text-center mt-3">
+        <small>Don't have an account? <a href="#" id="signupLink" class="text-success text-decoration-none fw-bold">Sign Up</a></small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div class="modal fade" id="forgotModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4 rounded-3 shadow">
+      <h5 class="text-center text-success fw-bold mb-3">Reset Password</h5>
+      <form id="forgotForm">
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" id="forgotEmail" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">New Password</label>
+          <input type="password" id="forgotNewPassword" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Reset</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4 rounded-3 shadow">
+      <h5 class="text-center text-success fw-bold mb-3">Create Account</h5>
+      <form id="signupForm">
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" id="signupEmail" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Username</label>
+          <input type="text" id="signupUsername" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" id="signupPassword" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Success Message -->
+<div id="alertBox" class="alert alert-success position-fixed top-0 end-0 m-3 d-none shadow-sm" style="z-index:9999;">
+  <span id="alertMsg"></span>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Alert helper
+function showAlert(msg) {
+  const alertBox = document.getElementById('alertBox');
+  document.getElementById('alertMsg').textContent = msg;
+  alertBox.classList.remove('d-none');
+  setTimeout(() => alertBox.classList.add('d-none'), 2000);
+}
+
+// Modal references
+const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+const signupModal = new bootstrap.Modal(document.getElementById('signupModal'));
+const forgotModal = new bootstrap.Modal(document.getElementById('forgotModal'));
+
+// Switch modals
+document.getElementById('signupLink').onclick = e => {
+  e.preventDefault();
+  loginModal.hide();
+  setTimeout(() => signupModal.show(), 300);
+};
+document.getElementById('forgotLink').onclick = e => {
+  e.preventDefault();
+  loginModal.hide();
+  setTimeout(() => forgotModal.show(), 300);
+};
+
+// Signup form
+document.getElementById('signupForm').onsubmit = e => {
+  e.preventDefault();
+  signupModal.hide();
+  showAlert("Account created successfully!");
+  setTimeout(() => loginModal.show(), 1500);
+};
+
+// Forgot password form
+document.getElementById('forgotForm').onsubmit = e => {
+  e.preventDefault();
+  forgotModal.hide();
+  showAlert("Password reset successful!");
+  setTimeout(() => loginModal.show(), 1500);
+};
+
+// Login form
+document.getElementById('loginForm').onsubmit = e => {
+  e.preventDefault();
+  const email = document.getElementById('loginEmail').value.trim();
+  const pass = document.getElementById('loginPassword').value.trim();
+  if (!email || !pass) return showAlert("Please enter all fields");
+
+  loginModal.hide();
+  showAlert("Login successful! Dashboard coming soon...");
+  setTimeout(() => (window.location.href = "index.html"), 1800);
+};
+</script>
+
+
+
+                            </div>
+                        </nav>
+                        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" style="height: 410px;">
+                                    <img class="img-fluid" src="img/sh.jpg" alt="Image">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="p-3" style="max-width: 700px;">
+                                            <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
+                                            <h3 class="display-4 text-white font-weight-semi-bold mb-4">Fashionable</h3>
+                                            <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" style="height: 410px;">
+                                    <img class="img-fluid" src="img/pk.jpg" alt="Image">
+                                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="p-3" style="max-width: 700px;">
+                                            <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
+                                            <h3 class="display-4 text-white font-weight-semi-bold mb-4">Reasonable Price</h3>
+                                            <a href="" class="btn btn-light py-2 px-3">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                                    <span class="carousel-control-prev-icon mb-n2"></span>
+                                </div>
+                            </a>
+                            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                                    <span class="carousel-control-next-icon mb-n2"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-5">
+            <div class="row px-xl-5 pb-3">
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                        <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+                        <h5 class="font-weight-semi-bold m-0">Quality Product</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                        <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
+                        <h5 class="font-weight-semi-bold m-0">Free Shipping</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                        <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+                        <h5 class="font-weight-semi-bold m-0">7-Day Return</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                        <h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
+                        <h5 class="font-weight-semi-bold m-0">24/7 Support</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pt-5">
+            <section id="product-categories" div class="row px-xl-5 pb-3">
+                <div class="col-lg-4 col-md-6 pb-1">
+<h4>PRODUCT CATEGORIES</h4>
+                    <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                        <p class="text-right">50 Products</p>
+                        <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                            <img class="img-fluid" src="img/08.jpg" alt="">
+                        </a>
+                        <h5 class="font-weight-semi-bold m-0">Women Outfits A1</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                        <p class="text-right">30 Products</p>
+                        <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                            <img class="img-fluid" src="img/03.jpg" alt="">
+                        </a>
+                        <h5 class="font-weight-semi-bold m-0">Women Outfit A2</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                        <p class="text-right">100 Products</p>
+                        <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                            <img class="img-fluid" src="img/a2.jpg" alt="">
+                        </a>
+                        <h5 class="font-weight-semi-bold m-0">Handbags</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                        <p class="text-right">150 Products</p>
+                        <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                            <img class="img-fluid" src="img/s3.jpg" alt="">
+                        </a>
+                        <h5 class="font-weight-semi-bold m-0">Branded Airforce</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                        <p class="text-right">120 Products</p>
+                        <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                            <img class="img-fluid" src="img/s2.jpg" alt="">
+                        </a>
+                        <h5 class="font-weight-semi-bold m-0">Rubber Shoes</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
+                        <p class="text-right">99 Products</p>
+                        <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                            <img class="img-fluid" src="img/999.jpg" alt="">
+                        </a>
+                        <h5 class="font-weight-semi-bold m-0">Attires</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid offer pt-5">
+            <div class="row px-xl-5">
+                <div class="col-md-6 pb-4">
+                    <div class="position-relative bg-secondary text-center text-md-right text-white mb-2 py-5 px-5">
+                        <img src="img/880.jpg" alt="">
+                        <div class="position-relative" style="z-index: 1;">
+                            <h6 class="text-uppercase text-primary mb-3">9% off the all order</h6>
+                            <h3 class="mb-4 font-weight-semi-bold">Today's offers</h3>
+                            <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pb-4">
+                    <div class="position-relative bg-secondary text-center text-md-left text-white mb-2 py-5 px-5">
+                        <img src="img/880.jpg" alt="">
+                        <div class="position-relative" style="z-index: 1;">
+                            <h6 class="text-uppercase text-primary mb-3">5% off the all order</h6>
+                            <h4 class="mb-4 font-weight-semi-bold">last weeks offers</h4>
+                            <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-5">
+            <div class="text-center mb-4">
+                <h2 class="section-title px-5"><span class="px-2">Today's Products</span></h2>
+            </div>
+ 
+
+
+    <div class="row px-xl-5 pb-3">
+
+<!-- Products -->
+<div class="row px-xl-5 pb-3">
+
+    <!-- Product 1 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+        <div class="card product-item border-0 mb-4">
+            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                <img class="img-fluid w-100 product-image" src="img/a1.jpg" alt="Outfit">
+            </div>
+            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                <h6 class="text-truncate mb-3">Outfit</h6>
+                <div class="d-flex justify-content-center">
+                    <h6 class="product-price" data-price="350.00">KSH 30.00</h6>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light border">
+                <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                   data-img="img/a1.jpg" data-price="30.00" data-name="Outfit">
+                    <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+        <div class="card product-item border-0 mb-4">
+            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                <img class="img-fluid w-100 product-image" src="img/a2.jpg" alt="Handbag">
+            </div>
+            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                <h6 class="text-truncate mb-3">Handbag</h6>
+                <div class="d-flex justify-content-center">
+                    <h6 class="product-price" data-price="400.00">KSH 400.00</h6>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light border">
+                <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                   data-img="img/a2.jpg" data-price="400.00" data-name="Handbag">
+                    <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+        <div class="card product-item border-0 mb-4">
+            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                <img class="img-fluid w-100 product-image" src="img/a3.jpg" alt="Outfit">
+            </div>
+            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                <h6 class="text-truncate mb-3">Outfit</h6>
+                <div class="d-flex justify-content-center">
+                    <h6 class="product-price" data-price="360.00">KSH 360.00</h6>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light border">
+                <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                   data-img="img/a3.jpg" data-price="360.00" data-name="Outfit">
+                    <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+        <div class="card product-item border-0 mb-4">
+            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                <img class="img-fluid w-100 product-image" src="img/a4.jpg" alt="Outfit">
+            </div>
+            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                <h6 class="text-truncate mb-3">Outfit</h6>
+                <div class="d-flex justify-content-center">
+                    <h6 class="product-price" data-price="400.00">KSH 400.00</h6>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between bg-light border">
+                <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                   data-img="img/a4.jpg" data-price="400.00" data-name="Outfit">
+                    <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script>
+document.querySelectorAll('.buy-now-btn').forEach(button => {
+    button.addEventListener('click', e => {
+        e.preventDefault();
+        const name = button.dataset.name;
+        const price = button.dataset.price;
+        const img = button.dataset.img;
+
+        // show loading (optional)
+        button.innerHTML = '<i class="fas fa-spinner fa-spin text-primary me-1"></i> Loading...';
+
+        // Redirect after 1 second
+        setTimeout(() => {
+            const query = new URLSearchParams({ name, price, img }).toString();
+            window.location.href = `payment.html?${query}`;
+        }, 1000);
+    });
+});
+</script>
+
+
+
+<div class="row px-xl-5 pb-3">
+
+        <!-- Product 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a1.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="350.00">KSH 350.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a1.jpg" data-price="350.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a2.jpg" alt="Handbag">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Handbag</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="400.00">KSH 400.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a2.jpg" data-price="400.00" data-name="Handbag">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a3.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="360.00">KSH 360.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a3.jpg" data-price="360.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a4.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="400.00">KSH 400.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a4.jpg" data-price="400.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Product Modal -->
+<div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3 text-center">
+      <div id="loadingSpinner" class="py-5">
+        <div class="spinner-border text-primary" role="status"></div>
+        <p class="mt-3">Loading product details...</p>
+      </div>
+      <div id="productDetails" style="display:none;">
+        <img id="modalProductImg" src="" alt="" class="mb-3 img-fluid rounded">
+        <h5 id="modalProductName"></h5>
+        <p id="modalProductPrice" class="fw-bold text-primary"></p>
+        <button id="proceedBtn" class="btn btn-success mt-2">Proceed to Payment</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS -->
+<script>
+document.querySelectorAll('.buy-now-btn').forEach(button => {
+    button.addEventListener('click', e => {
+        e.preventDefault();
+        const name = button.dataset.name;
+        const price = button.dataset.price;
+        const img = button.dataset.img;
+
+        // show loading (optional)
+        button.innerHTML = '<i class="fas fa-spinner fa-spin text-primary me-1"></i> Loading...';
+
+        // Redirect after 1 second
+        setTimeout(() => {
+            const query = new URLSearchParams({ name, price, img }).toString();
+            window.location.href = `payment.html?${query}`;
+        }, 1000);
+    });
+});
+</script>
+
+
+
+ <div class="container-fluid pt-5">
+            <div class="text-center mb-4">
+                <h2 class="section-title px-5"><span class="px-2">Weekly Products</span></h2>
+            </div>
+
+    <div class="row px-xl-5 pb-3">
+
+        <!-- Product 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a1.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="350.00">KSH 350.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a1.jpg" data-price="350.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a2.jpg" alt="Handbag">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Handbag</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="400.00">KSH 400.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a2.jpg" data-price="400.00" data-name="Handbag">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a3.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="360.00">KSH 360.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a3.jpg" data-price="360.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a4.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="400.00">KSH 400.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a4.jpg" data-price="400.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a55.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="500.00">KSH 500.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a55.jpg" data-price="500.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a6.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="450.00">KSH 450.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a6.jpg" data-price="450.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a7.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="360.00">KSH 360.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a7.jpg" data-price="360.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/a8.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="470.00">KSH 470.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn"
+                       data-img="img/a8.jpg" data-price="470.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Product Modal -->
+<div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3 text-center">
+      <div id="loadingSpinner" class="py-5">
+        <div class="spinner-border text-primary" role="status"></div>
+        <p class="mt-3">Loading product details...</p>
+      </div>
+      <div id="productDetails" style="display:none;">
+        <img id="modalProductImg" src="" alt="" class="mb-3 img-fluid rounded">
+        <h5 id="modalProductName"></h5>
+        <p id="modalProductPrice" class="fw-bold text-primary"></p>
+        <button id="proceedBtn" class="btn btn-success mt-2">Proceed to Payment</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS -->
+<script>
+document.querySelectorAll('.buy-now-btn').forEach(button => {
+    button.addEventListener('click', e => {
+        e.preventDefault();
+        const name = button.dataset.name;
+        const price = button.dataset.price;
+        const img = button.dataset.img;
+
+        // show loading (optional)
+        button.innerHTML = '<i class="fas fa-spinner fa-spin text-primary me-1"></i> Loading...';
+
+        // Redirect after 1 second
+        setTimeout(() => {
+            const query = new URLSearchParams({ name, price, img }).toString();
+            window.location.href = `payment.html?${query}`;
+        }, 1000);
+    });
+});
+</script>
+
+<div class="container-fluid bg-secondary my-5">
+    <div class="row justify-content-md-center py-5 px-xl-5">
+        <div class="col-md-6 col-12 py-5">
+            <div class="text-center mb-2 pb-2">
+                <h2 class="section-title px-5"><span class="bg-secondary px-2">Stay Updated</span></h2>
+                <p>Unlock instant access to the freshest Avon Fashion looks and deals—join our list today</p>
+            </div>
+
+            <!-- Countdown Timer -->
+            <div class="text-center mb-4" id="countdown" style="font-weight: 600; font-size: 1.25rem;"></div>
+
+            <form action="">
+                <div class="input-group">
+                    <input type="text" class="form-control border-white p-4" placeholder="Email Goes Here">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary px-4">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- JS -->
+<script>
+document.querySelectorAll('.buy-now-btn').forEach(button => {
+    button.addEventListener('click', e => {
+        e.preventDefault();
+        const name = button.dataset.name;
+        const price = button.dataset.price;
+        const img = button.dataset.img;
+
+        // show loading (optional)
+        button.innerHTML = '<i class="fas fa-spinner fa-spin text-primary me-1"></i> Loading...';
+
+        // Redirect after 1 second
+        setTimeout(() => {
+            const query = new URLSearchParams({ name, price, img }).toString();
+            window.location.href = `payment.html?${query}`;
+        }, 1000);
+    });
+});
+</script>
+
+
+        <div class="container-fluid pt-5">
+            <div class="text-center mb-4">
+                <h2 class="section-title px-5"><span class="px-2">Just Arrived</span></h2>
+            </div>
+  
+    <div class="row px-xl-5 pb-3">
+
+        <!-- Product 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r1.jpg" alt="Airforce a1">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Airforce a1</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="1500.00">KSH 1500.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r1.jpg" data-price="1500.00" data-name="Airforce a1">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r2.jpg" alt="Airforce a2">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Airforce a2</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="2500.00">KSH 2500.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r2.jpg" data-price="2500.00" data-name="Airforce a2">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r3.jpg" alt="Airforce a3">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Airforce a3</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="3000.00">KSH 3000.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r3.jpg" data-price="3000.00" data-name="Airforce a3">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r5.jpg" alt="Colorful Sweater">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Colorful Sweater</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="500.00">KSH 500.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r5.jpg" data-price="500.00" data-name="Colorful Sweater">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/t1.jpg" alt="Bag">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Bag</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="2600.00">KSH 2600.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/t1.jpg" data-price="2600.00" data-name="Bag">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/g1.jpg" alt="Suite">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Suite</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="760.00">KSH 760.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/g1.jpg" data-price="760.00" data-name="Suite">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/g3.jpg" alt="Stylish">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Stylish</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="750.00">KSH 750.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/g3.jpg" data-price="750.00" data-name="Stylish Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/g2.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="790.00">KSH 790.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/g2.jpg" data-price="790.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Product Modal -->
+<div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3 text-center">
+      <div id="loadingSpinner" class="py-5">
+        <div class="spinner-border text-primary" role="status"></div>
+        <p class="mt-3">Loading product details...</p>
+      </div>
+      <div id="productDetails" style="display:none;">
+        <img id="modalProductImg" src="" alt="" class="mb-3 img-fluid rounded">
+        <h5 id="modalProductName"></h5>
+        <p id="modalProductPrice" class="fw-bold text-primary"></p>
+        <button id="proceedBtn" class="btn btn-success mt-2">Proceed to Payment</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS -->
+<script>
+document.querySelectorAll('.buy-now-btn').forEach(button => {
+    button.addEventListener('click', e => {
+        e.preventDefault();
+        const name = button.dataset.name;
+        const price = button.dataset.price;
+        const img = button.dataset.img;
+
+        // show loading (optional)
+        button.innerHTML = '<i class="fas fa-spinner fa-spin text-primary me-1"></i> Loading...';
+
+        // Redirect after 1 second
+        setTimeout(() => {
+            const query = new URLSearchParams({ name, price, img }).toString();
+            window.location.href = `payment.html?${query}`;
+        }, 1000);
+    });
+});
+</script>
+
+
+ <div class="container-fluid pt-5">
+            <div class="text-center mb-4">
+                <h2 class="section-title px-5"><span class="px-2">Double Discount</span></h2>
+            </div>
+
+
+    <div class="row px-xl-5 pb-3">
+
+        <!-- Product 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r1.jpg" alt="Airforce a1">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Airforce a1</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="1500.00">KSH 1500.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r1.jpg" data-price="1500.00" data-name="Airforce a1">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r2.jpg" alt="Airforce a2">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Airforce a2</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="2500.00">KSH 2500.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r2.jpg" data-price="2500.00" data-name="Airforce a2">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r3.jpg" alt="Airforce a3">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Airforce a3</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="3000.00">KSH 3000.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r3.jpg" data-price="3000.00" data-name="Airforce a3">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r5.jpg" alt="Colorful Sweater">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Colorful Sweater</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="500.00">KSH 500.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r5.jpg" data-price="500.00" data-name="Colorful Sweater">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/t1.jpg" alt="Bag">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Bag</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="2600.00">KSH 2600.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/t1.jpg" data-price="2600.00" data-name="Bag">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/g1.jpg" alt="Suite">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Suite</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="760.00">KSH 760.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/g1.jpg" data-price="760.00" data-name="Suite">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/g3.jpg" alt="Stylish">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Stylish</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="750.00">KSH 750.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/g3.jpg" data-price="750.00" data-name="Stylish Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/g2.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="790.00">KSH 790.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/g2.jpg" data-price="790.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Buy Now Modal (same as previous) -->
+<div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3 text-center">
+      <div id="loadingSpinner" class="py-5">
+        <div class="spinner-border text-primary" role="status"></div>
+        <p class="mt-3">Loading product details...</p>
+      </div>
+      <div id="productDetails" style="display:none;">
+        <img id="modalProductImg" src="" alt="" class="mb-3 img-fluid rounded">
+        <h5 id="modalProductName"></h5>
+        <p id="modalProductPrice" class="fw-bold text-primary"></p>
+        <button id="proceedBtn" class="btn btn-success mt-2">Proceed to Payment</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS -->
+<script>
+document.querySelectorAll('.buy-now-btn').forEach(button => {
+    button.addEventListener('click', e => {
+        e.preventDefault();
+        const name = button.dataset.name;
+        const price = button.dataset.price;
+        const img = button.dataset.img;
+
+        // show loading (optional)
+        button.innerHTML = '<i class="fas fa-spinner fa-spin text-primary me-1"></i> Loading...';
+
+        // Redirect after 1 second
+        setTimeout(() => {
+            const query = new URLSearchParams({ name, price, img }).toString();
+            window.location.href = `payment.html?${query}`;
+        }, 1000);
+    });
+});
+</script>
+
+ <div class="container-fluid pt-5">
+            <div class="text-center mb-4">
+                <h2 class="section-title px-5"><span class="px-2">Recently Uploaded</span></h2>
+            </div>
+        
+    <div class="row px-xl-5 pb-3">
+
+        <!-- Product 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r1.jpg" alt="Airforce a1">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Airforce a1</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="1500.00">KSH 1500.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r1.jpg" data-price="1500.00" data-name="Airforce a1">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r2.jpg" alt="Airforce a2">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Airforce a2</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="2500.00">KSH 2500.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r2.jpg" data-price="2500.00" data-name="Airforce a2">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r3.jpg" alt="Airforce a3">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Airforce a3</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="3000.00">KSH 3000.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r3.jpg" data-price="3000.00" data-name="Airforce a3">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/r5.jpg" alt="Colorful Sweater">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Colorful Sweater</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="500.00">KSH 500.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/r5.jpg" data-price="500.00" data-name="Colorful Sweater">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/t1.jpg" alt="Bag">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Bag</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="2600.00">KSH 2600.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/t1.jpg" data-price="2600.00" data-name="Bag">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/g1.jpg" alt="Suite">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Suite</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="760.00">KSH 760.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/g1.jpg" data-price="760.00" data-name="Suite">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/g3.jpg" alt="Stylish">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Stylish</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="750.00">KSH 750.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/g3.jpg" data-price="750.00" data-name="Stylish Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100 product-image" src="img/g2.jpg" alt="Outfit">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <h6 class="text-truncate mb-3">Outfit</h6>
+                    <div class="d-flex justify-content-center">
+                        <h6 class="product-price" data-price="790.00">KSH 790.00</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="#" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary me-1"></i>View Detail</a>
+                    <a href="#" class="btn btn-sm text-dark p-0 buy-now-btn" data-img="img/g2.jpg" data-price="790.00" data-name="Outfit">
+                        <i class="fas fa-shopping-cart text-primary me-1"></i>Buy Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Buy Now Modal (same as previous) -->
+<div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3 text-center">
+      <div id="loadingSpinner" class="py-5">
+        <div class="spinner-border text-primary" role="status"></div>
+        <p class="mt-3">Loading product details...</p>
+      </div>
+      <div id="productDetails" style="display:none;">
+        <img id="modalProductImg" src="" alt="" class="mb-3 img-fluid rounded">
+        <h5 id="modalProductName"></h5>
+        <p id="modalProductPrice" class="fw-bold text-primary"></p>
+        <button id="proceedBtn" class="btn btn-success mt-2">Proceed to Payment</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS -->
+<script>
+document.querySelectorAll('.buy-now-btn').forEach(button => {
+    button.addEventListener('click', e => {
+        e.preventDefault();
+        const name = button.dataset.name;
+        const price = button.dataset.price;
+        const img = button.dataset.img;
+
+        // show loading (optional)
+        button.innerHTML = '<i class="fas fa-spinner fa-spin text-primary me-1"></i> Loading...';
+
+        // Redirect after 1 second
+        setTimeout(() => {
+            const query = new URLSearchParams({ name, price, img }).toString();
+            window.location.href = `payment.html?${query}`;
+        }, 1000);
+    });
+});
+</script>
+
+
+
+        <div class="container-fluid py-5 vendor-video-bg">
+            <style>
+                .vendor-video-bg {
+                    position: relative;
+                    overflow: hidden;
+                    padding: 0;
+                    min-height: 400px;
+                }
+
+                .vendor-video-bg #bg-video {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    min-width: 100%;
+                    min-height: 100%;
+                    width: auto;
+                    height: auto;
+                    z-index: 1;
+                }
+
+                .vendor-video-bg .video-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.5);
+                    z-index: 2;
+                }
+
+                .vendor-video-bg .content-over-video {
+                    position: relative;
+                    z-index: 3;
+                    padding-top: 5rem !important;
+                    padding-bottom: 5rem !important;
+                }
+
+                .vendor-video-bg h1,
+                .vendor-video-bg p {
+                    color: #ffffff !important;
+                    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+                }
+
+                @media (max-width: 767.98px) {
+                    .vendor-video-bg #bg-video {
+                        min-width: 150%;
+                        min-height: 150%;
+                    }
+                }
+            </style>
+            <div class="video-overlay"></div>
+            <video autoplay loop muted playsinline id="bg-video">
+                <source src="img/vv.mp4" type="video/mp4">
+            </video>
+            <div class="row px-xl-5 content-over-video">
+                <div class="col text-center">
+                    <h1 class="display-4">Discover comfortable, stylish clothing and footwear for every occasion.</h1>
+                    <p class="lead">Shop new arrivals and exclusive deals conveniently online or through an Avon Representative today!</p>
+                    <a href="#" class="btn btn-primary mt-3">Check it Out</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+            <div class="row px-xl-5 pt-5">
+                <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                    <a href="" class="text-decoration-none">
+                        <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1">AVON</span></h1>
+                    </a>
+                    <p>Affordable style delivered right to your door, because confidence never goes out of season.</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Kisii 408-40200 Kisii,Kenya</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i> ndukoteresa9@gmail.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+254 790 248509</p>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 mb-5">
+                            <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                                <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <h5 class="font-weight-bold text-dark mb-4">Message us!</h5>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control border-0 py-4" placeholder="Your Email" required="required" />
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-block border-0 py-3" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top border-light mx-xl-5 py-4">
+                <div class="col-md-6 px-xl-0">
+                    <p class="mb-md-0 text-center text-md-left text-dark"> &copy; 2025 AVON . All Rights Reserved. </p>
+                </div>
+                <div class="col-md-6 px-xl-0 text-center text-md-right">
+                    <img class="img-fluid" src="img/payments.png" alt="">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                // Event listener for all elements with the class 'buy-now-btn'
+                $('.buy-now-btn').on('click', function(e) {
+                    e.preventDefault(); // Prevent the default link behavior
+
+                    const button = $(this);
+                    const originalText = button.html();
+
+                    // 1. Get dynamic data from data-attributes
+                    const imageUrl = button.data('img');
+                    const price = button.data('price');
+                    const name = button.data('name');
+
+                    // 2. Start the loading simulation
+                    button.addClass('btn-loading'); // Apply loading style
+                    // Change button content to a spinner and text
+                    button.html('<span class="spinner-border spinner-border-sm mr-1" role="status" aria-hidden="true"></span> Loading...');
+
+                    // 3. Simulate 2-second delay
+                    setTimeout(function() {
+                        // 4. Construct the URL for the payment page with parameters
+                        // NOTE: Replace 'payment.html' with your actual payment page URL.
+                        // I'm URL-encoding the parameters to handle spaces and special characters.
+                        const paymentUrl = 'payment/index.html' +
+                            '?product_image=' + encodeURIComponent(imageUrl) +
+                            '&product_price=' + encodeURIComponent(price) +
+                            '&product_name=' + encodeURIComponent(name);
+
+                        // 5. Open the payment page
+                        window.location.href = paymentUrl;
+
+                        // Reset button state (though usually not strictly needed as page redirects)
+                        button.removeClass('btn-loading');
+                        button.html(originalText);
+                    }, 2000); // 2000 milliseconds = 2 seconds
+                });
+            });
+        </script>
+</body>
+
+</html>

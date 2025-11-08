@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Payment</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+  background: #f5f7fa;
+  font-family: 'Poppins', sans-serif;
+}
+.payment-container {
+  max-width: 450px;
+  margin: 80px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  padding: 30px;
+  position: relative;
+}
+.shop-icon {
+  font-size: 50px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+.buyer-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  display: none;
+  animation: fadeInOut 5s ease-in-out;
+  z-index: 10000;
+}
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+</style>
+</head>
+<body>
+
+<div class="payment-container text-center">
+  <div class="shop-icon">
+    <i class="fas fa-store"></i>
+  </div>
+  <img id="productImg" src="" alt="Product" class="img-fluid rounded mb-3" style="max-height:180px;">
+  <h5 id="productName" class="fw-bold mb-2"></h5>
+  <p id="productPrice" class="text-success fw-bold"></p>
+
+  <form id="paymentForm" class="text-start mt-4">
+    <div class="mb-3">
+      <label class="form-label fw-semibold">Full Name</label>
+      <input type="text" class="form-control" id="fullName" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label fw-semibold">Phone Number</label>
+      <input type="tel" class="form-control" id="phone" pattern="[0-9]{10,}" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label fw-semibold">Delivery Date</label>
+      <input type="date" class="form-control" id="deliveryDate" required>
+    </div>
+    <button type="submit" class="btn btn-success w-100 mt-2">Proceed to Payment</button>
+  </form>
+
+  <div id="loading" class="mt-3 text-center text-muted" style="display:none;">
+    <div class="spinner-border text-success"></div>
+    <p class="mt-2">Processing your payment...</p>
+  </div>
+</div>
+
+<!-- Floating buyer popup -->
+<div class="buyer-popup" id="buyerPopup"></div>
+
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/a2e0e6ad5f.js" crossorigin="anonymous"></script>
+
+<script>
+// Load product info
+const params = new URLSearchParams(window.location.search);
+document.getElementById('productImg').src = params.get('img');
+document.getElementById('productName').textContent = params.get('name');
+document.getElementById('productPrice').textContent = `Price: KSH ${params.get('price')}`;
+
+// Restrict delivery date
+const dateInput = document.getElementById('deliveryDate');
+const today = new Date().toISOString().split('T')[0];
+dateInput.min = today;
+
+// Form submit handler
+document.getElementById('paymentForm').addEventListener('submit', e => {
+  e.preventDefault();
+  document.getElementById('loading').style.display = 'block';
+
+  setTimeout(() => {
+    const accountID = Math.floor(1000 + Math.random() * 9000);
+    const channelID = Math.floor(1000 + Math.random() * 9000);
+    const reference = Math.floor(1000 + Math.random() * 9000);
+
+    // Redirect to PayHero (simulated)
+    alert(`Transaction Created:
+Account ID: ${accountID}
+Channel ID: ${channelID}
+Reference: ${reference}
+Redirecting to PayHero...`);
+    window.location.href = 'https://payhero.africa/';
+  }, 1000);
+});
+
+// Buyer popups every 5 seconds
+const popup = document.getElementById('buyerPopup');
+const buyers = [
+  '+2547***23 bought a Handbag',
+  '+2547***91 purchased an Outfit',
+  '+2541***55 ordered Sneakers',
+  '+2547***72 paid for a Dress',
+  '+2547***11 completed a transaction'
+];
+function showRandomBuyer() {
+  const random = buyers[Math.floor(Math.random() * buyers.length)];
+  popup.textContent = random;
+  popup.style.display = 'block';
+  setTimeout(() => popup.style.display = 'none', 5000);
+}
+setInterval(showRandomBuyer, 5000);
+</script>
+
+</body>
+</html>
