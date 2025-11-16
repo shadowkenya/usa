@@ -14,10 +14,12 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+  background: url('img/shop.jpg') no-repeat center center fixed;
+  background-size: cover;
   overflow-x: hidden;
   position: relative;
 }
+
 body::before, body::after {
   content: '';
   position: fixed;
@@ -139,13 +141,13 @@ const today = new Date().toISOString().split('T')[0];
 document.getElementById('deliveryDate').setAttribute('min', today);
 
 // --- Random buyer popups ---
-const names = ["Faith", "John", "Ann", "David", "Mary", "Kevin", "Lucy", "Brian", "Sarah", "Tom"];
+const names = ["Faith", "John", "Ann", "David", "Mary", "Kevin", "Lucy", "Brian", "Sarah", "peter", "john", "mayende", "George", "shadow","Tom"];
 function randomPopup() {
   const name = names[Math.floor(Math.random() * names.length)];
   const last = Math.floor(1000 + Math.random() * 9000).toString().slice(0, 2);
   const popup = document.createElement('div');
   popup.className = 'popup';
-  popup.innerHTML = `<i class="fas fa-user-circle text-success"></i> ${name} ****${last} purchased now`;
+  popup.innerHTML = `<i class="fas fa-user-circle text-success"></i> ${name} 2547****${last} purchased now`;
   document.getElementById('popup-container').appendChild(popup);
   setTimeout(() => popup.remove(), 5000);
 }
