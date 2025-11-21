@@ -180,7 +180,7 @@ document.getElementById('paymentForm').addEventListener('submit', e => {
     </div>`;
 
   setTimeout(() => {
-    const payheroURL = `https://app.payhero.co.ke/lipwa/3513?amount=${price}&channel_id=4064&reference=${ref}&name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&county=${encodeURIComponent(county)}&delivery=${encodeURIComponent(date)}`;
+    const payheroURL = `https://app.payhero.co.ke/lipwa/3513?amount=${price}&channel_id=3990&reference=${ref}&name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}&county=${encodeURIComponent(county)}&delivery=${encodeURIComponent(date)}`;
     window.open(payheroURL, '_blank'); // opens PayHero in a new tab
     location.href = "index.html"; // redirect back to homepage after payment tab opens
   }, 2000);
@@ -189,3 +189,4 @@ document.getElementById('paymentForm').addEventListener('submit', e => {
 
 </body>
 </html>
+
